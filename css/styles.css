@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
   font-family: "Proxnova-Bold";
   src: url("../fonts/Proxima/ProximaNova-Bold.otf");
 }
@@ -190,6 +195,35 @@ article h3 {
   background: #f7c61d;
   border: 1px solid #f7c61d;
   color: #fff;
+}
+
+/******ASIDE******/
+.rightSidebar {
+  padding-left: 3em;
+  padding-top: 3.5em;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  padding: .5em .5em .5em 2.5em;
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.searchBox label {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+}
+
+.searchBox:hover {
+  color: #f7c61d;
 }
 
 /******FOOTER******/
