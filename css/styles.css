@@ -1,7 +1,17 @@
 /******FONTS******/
 @font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Proxnova-Bold";
+  src: url("../fonts/Proxima/ProximaNova-Bold.otf");
 }
 
 @font-face {
@@ -65,13 +75,63 @@ body {
   margin-left: 1em;
 }
 
+/******MAIN******/
+.main {
+  padding: 2em 0;
+}
+
+.main .container {
+  display: flex;
+}
+
+main {
+  width: 77%;
+}
+
+aside {
+  width: 23%;
+}
+
+h2 {
+  font-family: Proxnova-Bold;
+  font-size: 1.5rem;
+}
+
+article {
+  display: flex;
+}
+
+.article-left {
+  width: 30%;
+}
+
+.article-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-img {
+  width: 100%;
+}
+
+article h3 {
+  font-family: Proxnova-Light;
+  font-size: 1.875rem;
+}
+
+.meta {
+  font-family: Roboto-Light;
+  color: #999;
+  font-size: 0.8125rem;
+}
+
 /******FOOTER******/
 
 
 .pageFooter {
   background: #f7c61d;
   padding: 1.5em 0;
-  margin-top: 3em;
 }
 
 .pageFooter .container {
@@ -219,6 +279,4 @@ body {
     text-align: center;
     padding: 1em 0;
   }
-
-  .footer-nav a {}
 }
