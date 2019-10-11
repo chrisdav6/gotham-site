@@ -100,7 +100,7 @@ aside {
 h2 {
   font-family: Proxnova-Bold;
   font-size: 1.5rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
 }
 
 article {
@@ -149,6 +149,7 @@ article h3 {
 }
 
 .description {
+  font-family: Proxnova-Light;
   color: #555;
   line-height: 1.25;
 }
@@ -275,6 +276,40 @@ article h3 {
 .calendar .currentDay {
   background: #f7c61d;
   color: #fff;
+}
+
+.popularNews {
+  margin-top: 2em;
+}
+
+.popularNews article {
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.popularNews h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.popularNews .date {
+  margin-bottom: .5em;
+}
+
+.popularNews h2 {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.popularNews h2::after {
+  content: ".";
+  font-size: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #e5e5e5;
+  margin-left: 20px;
 }
 
 /******FOOTER******/
