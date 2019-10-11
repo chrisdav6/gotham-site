@@ -393,6 +393,26 @@ article h3 {
 
 /******MEDIA QUERIES******/
 @media(max-width:1000px) {
+  .main .container {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    order: 2
+  }
+
+  .rightSidebar {
+    width: 100%;
+    order: 1;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  h2 {
+    margin-top: 2em;
+  }
+
   .pageHeader {
     padding: 2em 0;
   }
@@ -458,6 +478,45 @@ article h3 {
 
   .pageHeader a {
     padding: .35em 5em;
+  }
+
+  h2 {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  h2::after {
+    content: ".";
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #e5e5e5;
+    margin-left: 20px;
+  }
+
+  article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .article-left {
+    width: 100%;
+  }
+
+  .article-img {
+    margin-bottom: 1em;
+  }
+
+  .article-right {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .meta,
+  .additional {
+    margin: 1em 0;
   }
 
   .footer-nav li {
