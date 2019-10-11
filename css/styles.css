@@ -519,6 +519,11 @@ article h3 {
     margin: 1em 0;
   }
 
+  .moreArticles {
+    display: block;
+    margin: 0 auto;
+  }
+
   .footer-nav li {
     display: block;
     text-align: center;
